@@ -6,6 +6,8 @@ shell-outs other than a 2-second `git branch --show-current`.
 
 ## Sample
 
+![cc-statusline sample](doc/sample.png)
+
 ```
 ██████████ 76% (245.0K) [Opus 4.7:xhigh] 📁 ~/projects/foo 🌿 main │ $1.23 │ 🪙 245.0K │ ♻️ 2× │ 5h 64% 4h19m · 7d 26% 3d9h │ ⌛ 12m34s
 ```
@@ -104,6 +106,8 @@ under typical Claude Code usage; no locks needed.
 `git branch --show-current`）。
 
 ## 範例
+
+![cc-statusline 範例](doc/sample.png)
 
 ```
 ██████████ 76% (245.0K) [Opus 4.7:xhigh] 📁 ~/projects/foo 🌿 main │ $1.23 │ 🪙 245.0K │ ♻️ 2× │ 5h 64% 4h19m · 7d 26% 3d9h │ ⌛ 12m34s

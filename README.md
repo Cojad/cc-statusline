@@ -32,6 +32,21 @@ regardless of which session is currently rendering.
 
 ## Install
 
+### Quick install (let Claude Code do it)
+
+In any Claude Code session, just paste:
+
+```
+install https://github.com/Cojad/cc-statusline
+```
+
+Claude Code will fetch this README, place `cc-statusline.js` under
+`~/.claude/`, and patch `~/.claude/settings.json` with both the `statusLine`
+entry and the `PreCompact` hook. The bar appears within the next refresh —
+no reload needed.
+
+### Manual install
+
 1. Copy `cc-statusline.js` to `~/.claude/statusline-command.js` (or anywhere
    you prefer — adjust the paths below):
 
@@ -69,8 +84,8 @@ regardless of which session is currently rendering.
      `hook_event_name === "PreCompact"` it bumps the compact counter and
      pipes stdin through; otherwise it renders.
 
-3. Restart Claude Code (or run `:reload` in TUI). The bar appears at the
-   bottom and updates each turn.
+3. Done. The bar appears at the bottom on the next refresh (≤ 30 s) and
+   updates every turn — no reload needed.
 
 ## Files it touches
 
@@ -133,6 +148,20 @@ under typical Claude Code usage; no locks needed.
 
 ## 安裝
 
+### 快速安裝（請 Claude Code 代勞）
+
+在任何 Claude Code session 直接貼上：
+
+```
+install https://github.com/Cojad/cc-statusline
+```
+
+Claude Code 會自己抓這份 README，把 `cc-statusline.js` 放到 `~/.claude/`，
+更新 `~/.claude/settings.json` 裡的 `statusLine` 與 `PreCompact` hook。
+下次刷新（最多 30 秒）就會看到狀態列，**不需要重啟**。
+
+### 手動安裝
+
 1. 把 `cc-statusline.js` 複製到 `~/.claude/statusline-command.js`（或你
    喜歡的位置，下面路徑同步調整）：
 
@@ -169,8 +198,8 @@ under typical Claude Code usage; no locks needed.
      `hook_event_name === "PreCompact"` 時遞增 compact 計數並把 stdin
      原樣通過；否則進入 render 流程。
 
-3. 重啟 Claude Code（或在 TUI 內執行 `:reload`）。狀態列會出現在底部
-   並隨每回合更新。
+3. 完成。下次刷新（最多 30 秒）狀態列就會出現在底部並隨每回合更新，
+   **不需要重啟**。
 
 ## 寫入的檔案
 
